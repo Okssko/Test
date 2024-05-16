@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--header-->
+    <header>
+      <div class="row">
+        
+        <div class="column" onclick="openTab('b3');" style=" float: right;">
+          My cart (4)
+        </div>
+      </div>
+    </header>
+ <!--shopping cart-->
+ <div id="b3" class="containerTab" style="display:none;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ 
+  <article class="cart__card">
+    <div class="cart__box">
+        <img src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg" alt="" class="cart__img">
+    </div>
+
+    <div class="cart__details">
+        <h3 class="cart__title">Classsic Tee</h3>
+        <span class="cart__price">1 x $75 </span>
+        <br>size: S
+        
+
+        <div class="cart__amount">
+          <div class="cart__amount-content">
+              <span class="cart__amount-box">
+                  <i class='bx bx-minus' ></i>
+                </span>
+
+               
+
+                <span class="cart__amount-box">
+                    <i class='bx bx-plus' ></i>
+                </span>
+            </div>
+
+            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+        </div>
+    </div>
+</article>
+
+<article class="cart__card">
+    <div class="cart__box">
+        <img src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg" alt="" class="cart__img">
+    </div>
+
+    <div class="cart__details">
+        <h3 class="cart__title">Classic Tee</h3>
+        <span class="cart__price">3 x $75 </span>
+        <br>size: L
+
+        <div class="cart__amount">
+            <div class="cart__amount-content">
+    
+                <span class="cart__amount-box">
+                    <i class='bx bx-plus' ></i>
+                </span>
+            </div>
+
+            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+        </div>
+ 
+</article>
+</div>
+
+<main class="container">
+ 
+  <!-- Left Column /  Image -->
+  <div class="left-column" >
+  
+    <img data-image="red" class="active" src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg" alt="">
+  </div>
+ 
+ 
+  <!-- Right Column -->
+  <div class="right-column">
+ 
+    <!-- Product Description -->
+    <div class="product-description">
+     
+      <h3>Classic Tee</h3>
+      <br>
+      <hr>
+      <br>
+      <p><b>75 $</b></p>
+      <br>
+      <hr>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+ 
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+ 
+      <!-- Size -->
+      <div class="cable-config">
+        <span>SIZE</span><span class="required" style="color:#C90000">*</span>
+ 
+        <div class="cable-choose">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+        </div>
+ 
+        
+      </div>
+    </div>
+ 
+ <!--==================== Product Pricing ====================-->
+    <div class="product-price">
+      
+      <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+  </div>
+</main>
+
+  <!---->
+<script src="script.js"></script>
+</body>
+</html>
